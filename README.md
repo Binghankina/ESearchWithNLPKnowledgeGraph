@@ -2,14 +2,12 @@
 A project improving the elastic search indexing accuracy with NLP generated knowledge graph. The project uses equity research report that collected from internet, and processed the words of report with Tensorflow CNN neural network. The neural network generates a knowledge graph as a dictionary to reveal the relation of words. By utilizing the knowledge graph, we can build elastic search index with words extension to improve the search experience of equity research reports. For example, if the user searches APPL, Google and Facebook related equity research report will also appear in the search result.   
 
 ## Dependencies
-
 - python packages
 ```bash
     $ python3.4 -m venv ../env3
     $ source ../env3/bin/activate
     $ pip3 install -r ./requirements.txt
 ```
-
 - if docker is not installed
 ```bash
     // ubuntu
@@ -17,7 +15,6 @@ A project improving the elastic search indexing accuracy with NLP generated know
     // docker compose
     $ pip3 install docker-compose
 ```
-
 - postgreSQL
 ```bash
     $ pkill postgres
@@ -29,7 +26,6 @@ A project improving the elastic search indexing accuracy with NLP generated know
 ```
 
 ## Deployment
-
 ```bash
     $ python3 manage.py migrate
     $ python3 manage.py runserver <ip>:8000
